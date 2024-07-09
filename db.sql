@@ -5,8 +5,6 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-CREATE DATABASE `cybeqiep_ultimatepos` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */;
-USE `cybeqiep_ultimatepos`;
 
 SET NAMES utf8mb4;
 
@@ -2307,4 +2305,4 @@ CREATE TABLE `warranties` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
--- 2024-07-09 04:34:46
+-- 2024-07-09 04:08:48
