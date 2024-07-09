@@ -1,10 +1,12 @@
--- Adminer 4.8.1 MySQL 10.4.32-MariaDB dump
+-- Adminer 4.8.1 MySQL 10.6.18-MariaDB-cll-lve dump
 
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
+CREATE DATABASE `cybeqiep_zackyposprod` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci */;
+USE `cybeqiep_zackyposprod`;
 
 SET NAMES utf8mb4;
 
@@ -1644,7 +1646,8 @@ CREATE TABLE `purchase_lines` (
 
 INSERT INTO `purchase_lines` (`id`, `transaction_id`, `product_id`, `variation_id`, `quantity`, `secondary_unit_quantity`, `pp_without_discount`, `discount_percent`, `purchase_price`, `purchase_price_inc_tax`, `item_tax`, `tax_id`, `purchase_requisition_line_id`, `purchase_order_line_id`, `quantity_sold`, `quantity_adjusted`, `quantity_returned`, `po_quantity_purchased`, `mfg_quantity_used`, `mfg_date`, `exp_date`, `lot_number`, `sub_unit_id`, `created_at`, `updated_at`) VALUES
 (1,	1,	1,	1,	5.0000,	0.0000,	0.0000,	0.00,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	0.0000,	0.0000,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:23:23',	'2024-07-09 10:23:23'),
-(2,	2,	2,	2,	10.0000,	0.0000,	0.0000,	0.00,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	0.0000,	0.0000,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:27:15',	'2024-07-09 10:27:15');
+(2,	2,	2,	2,	10.0000,	0.0000,	0.0000,	0.00,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	0.0000,	0.0000,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:27:15',	'2024-07-09 10:27:15'),
+(3,	4,	4,	4,	5.0000,	0.0000,	0.0000,	0.00,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	0.0000,	0.0000,	0.0000,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 11:43:14',	'2024-07-09 11:43:14');
 
 DROP TABLE IF EXISTS `reference_counts`;
 CREATE TABLE `reference_counts` (
@@ -1967,7 +1970,8 @@ CREATE TABLE `transactions` (
 
 INSERT INTO `transactions` (`id`, `business_id`, `location_id`, `is_kitchen_order`, `res_table_id`, `res_waiter_id`, `res_order_status`, `type`, `sub_type`, `status`, `sub_status`, `is_quotation`, `payment_status`, `adjustment_type`, `contact_id`, `customer_group_id`, `invoice_no`, `ref_no`, `source`, `subscription_no`, `subscription_repeat_on`, `transaction_date`, `total_before_tax`, `tax_id`, `tax_amount`, `discount_type`, `discount_amount`, `rp_redeemed`, `rp_redeemed_amount`, `shipping_details`, `shipping_address`, `delivery_date`, `shipping_status`, `delivered_to`, `delivery_person`, `shipping_charges`, `shipping_custom_field_1`, `shipping_custom_field_2`, `shipping_custom_field_3`, `shipping_custom_field_4`, `shipping_custom_field_5`, `additional_notes`, `staff_note`, `is_export`, `export_custom_fields_info`, `round_off_amount`, `additional_expense_key_1`, `additional_expense_value_1`, `additional_expense_key_2`, `additional_expense_value_2`, `additional_expense_key_3`, `additional_expense_value_3`, `additional_expense_key_4`, `additional_expense_value_4`, `final_total`, `expense_category_id`, `expense_sub_category_id`, `expense_for`, `commission_agent`, `document`, `is_direct_sale`, `is_suspend`, `exchange_rate`, `total_amount_recovered`, `transfer_parent_id`, `return_parent_id`, `opening_stock_product_id`, `created_by`, `purchase_requisition_ids`, `prefer_payment_method`, `prefer_payment_account`, `sales_order_ids`, `purchase_order_ids`, `custom_field_1`, `custom_field_2`, `custom_field_3`, `custom_field_4`, `import_batch`, `import_time`, `types_of_service_id`, `packing_charge`, `packing_charge_type`, `service_custom_field_1`, `service_custom_field_2`, `service_custom_field_3`, `service_custom_field_4`, `service_custom_field_5`, `service_custom_field_6`, `is_created_from_api`, `rp_earned`, `order_addresses`, `is_recurring`, `recur_interval`, `recur_interval_type`, `recur_repetitions`, `recur_stopped_on`, `recur_parent_id`, `invoice_token`, `pay_term_number`, `pay_term_type`, `selling_price_group_id`, `created_at`, `updated_at`) VALUES
 (1,	1,	1,	0,	NULL,	NULL,	NULL,	'opening_stock',	NULL,	'received',	NULL,	0,	'paid',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-01-01 06:23:23',	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	1.000,	NULL,	NULL,	NULL,	1,	1,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	NULL,	0,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:23:23',	'2024-07-09 10:23:23'),
-(2,	1,	1,	0,	NULL,	NULL,	NULL,	'opening_stock',	NULL,	'received',	NULL,	0,	'paid',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-01-01 06:27:15',	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	1.000,	NULL,	NULL,	NULL,	2,	1,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	NULL,	0,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:27:15',	'2024-07-09 10:27:15');
+(2,	1,	1,	0,	NULL,	NULL,	NULL,	'opening_stock',	NULL,	'received',	NULL,	0,	'paid',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-01-01 06:27:15',	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	1.000,	NULL,	NULL,	NULL,	2,	1,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	NULL,	0,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 10:27:15',	'2024-07-09 10:27:15'),
+(4,	1,	1,	0,	NULL,	NULL,	NULL,	'opening_stock',	NULL,	'received',	NULL,	0,	'paid',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-01-01 07:43:14',	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	NULL,	0.0000,	0.0000,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	1.000,	NULL,	NULL,	NULL,	4,	1,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	0,	0,	NULL,	0,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2024-07-09 11:43:14',	'2024-07-09 11:43:14');
 
 DROP TABLE IF EXISTS `transaction_payments`;
 CREATE TABLE `transaction_payments` (
@@ -2260,7 +2264,7 @@ INSERT INTO `variation_location_details` (`id`, `product_id`, `product_variation
 (1,	1,	1,	1,	1,	5.0000,	'2024-07-09 10:23:23',	'2024-07-09 10:23:23'),
 (2,	2,	2,	2,	1,	10.0000,	'2024-07-09 10:27:15',	'2024-07-09 10:27:15'),
 (3,	3,	3,	3,	1,	10.0000,	'2024-07-09 03:46:44',	'2024-07-09 03:46:44'),
-(5,	4,	4,	4,	1,	20.0000,	'2024-07-09 04:00:19',	'2024-07-09 04:00:19');
+(5,	4,	4,	4,	1,	25.0000,	'2024-07-09 04:00:19',	'2024-07-09 11:43:14');
 
 DROP TABLE IF EXISTS `variation_templates`;
 CREATE TABLE `variation_templates` (
@@ -2305,4 +2309,4 @@ CREATE TABLE `warranties` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
--- 2024-07-09 04:08:48
+-- 2024-07-09 04:43:31
